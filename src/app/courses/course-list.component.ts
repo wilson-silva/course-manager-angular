@@ -37,7 +37,8 @@ export class CourseListComponent implements OnInit{
             next: () => {
                 console.log('Deleted with sucess');
                 this.retrieveAll();
-            }
+            },
+            error: err => console.log('Error', err)
         })
     }
 
